@@ -327,31 +327,9 @@ Verificar la variable de entorno `VITE_API_URL` en `.env.local` y asegurar que e
 npm run build
 ```
 
-### Caché de React Query
-Limpiar caché en el devtools si hay datos inconsistentes.
 
-## 📝 Mejoras Futuras
 
-- [ ] Carrito de compras funcional
-- [ ] Sistema de pagos integrado
-- [ ] Notificaciones en tiempo real
-- [ ] Reviews y ratings de productos
-- [ ] Búsqueda avanzada
-- [ ] Wishlist de usuarios
-- [ ] Historial de compras
-- [ ] Reportes administrativos mejorados
-- [ ] Testing automatizado (Jest, React Testing Library)
-- [ ] Deploy a producción
 
-## 🤝 Contribución
-
-Si deseas contribuir al proyecto:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
 
 ## 📄 Licencia
 
@@ -363,9 +341,6 @@ Para preguntas o problemas:
 - Abre un issue en el repositorio
 - Contacta al equipo de desarrollo
 
-## 👥 Autores
-
-Desarrollado con ❤️
 
 ---
 
