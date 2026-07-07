@@ -7,16 +7,16 @@ import { useSearchParams } from "react-router";
 export const FilterSidebar = () => {
 
     const [searchParams, setSearchParams] = useSearchParams();
-    const currentSize = searchParams.get('size')?.split(',') || [];//xs, xl, s, m, l, xl, xxl
+    const currentSize = searchParams.get('sizes')?.split(',') || searchParams.get('size')?.split(',') || [];//xs, xl, s, m, l, xl, xxl
     const currentPrice = searchParams.get('price') || 'any';
 
-    const handleSizeChange = (size: string) => {
-        const newSizes = currentSize.includes(size)
-            ? currentSize.filter(s => s !== size) // Si ya está seleccionado, lo quitamos
-            : [...currentSize, size]; // Si no está seleccionado, lo añadimos
+    const handleSizeChange = (sizes: string) => {
+        const newSizes = currentSize.includes(sizes)
+            ? currentSize.filter(s => s !== sizes) // Si ya está seleccionado, lo quitamos
+            : [...currentSize, sizes]; // Si no está seleccionado, lo añadimos
 
         searchParams.set('page', '1'); // Reiniciar a la página 1 al cambiar el filtro
-        searchParams.set('size', newSizes.join(','));
+        searchParams.set('sizes', newSizes.join(','));
         setSearchParams(searchParams);
     }
 
